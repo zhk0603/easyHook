@@ -83,9 +83,9 @@ public class MainActivity extends AppCompatActivity {
             sb.append(packageET.getText().toString());
             sb.append("_&_");
             sb.append(classET.getText().toString());
-            if (TextUtils.isEmpty(methodStr)) {
+            if (!TextUtils.isEmpty(methodStr)) {
                 sb.append("_&_");
-                sb.append(EMPTY_TAG);
+                sb.append(methodStr);
             }
             sb.append("_&_");
             sb.append(sp.getSelectedItemId());
